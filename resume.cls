@@ -14,7 +14,8 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
-
+\usepackage{color,soul}
+\sethlcolor{lightgray}
 \usepackage{tabularx} % Add tabularx package
 \usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
 \usepackage{tikz}
@@ -112,7 +113,7 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
     \sectionskip
-    \MakeUppercase{{\bf #1}} % Section title
+    \MakeUppercase{{\bf \hl{#1} }} % Section title
     \sectionlineskip
     \hrule % Horizontal line
     \begin{list}{}{ % List for each individual item in the section
