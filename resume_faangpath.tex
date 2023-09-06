@@ -1,11 +1,8 @@
 \documentclass{resume}
 
-\usepackage{lmodern}
 
-\usepackage{fontspec}
-\setmainfont{Georgia}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Artur Kopytin} % Your name
@@ -13,9 +10,9 @@
 % You can merge both of these into a single line, if you do not have a website.
 \address{{\faPhone~+972 53 332-8460} \\ Netanya, Israel}
 \address{
-    \href{https://github.com/Asnvir}{\faGithub~github.com/Asnvir} \\
-    \href{https://www.linkedin.com/in/artur-kopytin/}{\faLinkedin~linkedin.com/in/artur-kopytin/}\\
-    \href{mailto:artur.kop97@gmail.com} {\faEnvelope~artur.kop97@gmail.com}
+ \href{https://github.com/Asnvir}{\faGithub~github.com/Asnvir} \\
+ \href{https://www.linkedin.com/in/artur-kopytin/}{\faLinkedin~linkedin.com/in/artur-kopytin/}\\
+ \href{mailto:artur.kop97@gmail.com} {\faEnvelope~artur.kop97@gmail.com}
 }  %
 
 
@@ -26,80 +23,87 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-    \begin{rSection}{Education}
+ \begin{rSection}{Education}
+  \begin{tabular}{@{}p{0.8\textwidth}p{0.2\textwidth}}
+  {\bf Bachelor of Science (B.Sc.) in Software Engineering}, \href{https://www.afeka.ac.il/}{Afeka College of Engineering} & \hfill 2020 - 2024\hspace*{1em} \\
+  \textbf{Scholarship:} Recipient of the \href{https://www.heseg.com/}{HESEG} Foundation Scholarship for Lone Soldiers, awarded for academic excellence and service in the Israel Defense Forces \textbf{(IDF)}. This highly prestigious scholarship is granted to a select group of individuals, with only a handful of recipients chosen from thousands of applicants. & \hfill \\
+  {\bf Frontend developer}, Hilel IT School & \hfill 2022 - 2023\hspace*{1em} \\
+  \end{tabular}
+ \end{rSection}
 
 
 
-    {\bf Bachelor of Science Software Engineering}, \href{https://www.afeka.ac.il/}{Afeka College of Engineering} \hfill {2020 - 2024}\\
-    \textbf{Scholarship: }Recipient of the \href{https://www.heseg.com/}{HESEG} Foundation Scholarship for Lone Soldiers, awarded for academic excellence and service in the Israel Defense Forces \textbf{(IDF)}.This highly prestigious scholarship is granted to a select few, with only 50 recipients chosen from thousands of applicants.
 
 
-        {\bf Frontend developer}, Hilel IT School \hfill {2022 - 2023}
 
-    \end{rSection}
+
+
+
+
+
 
 %----------------------------------------------------------------------------------------
 % TECHNICAL STRENGTHS
 %----------------------------------------------------------------------------------------
-    \begin{rSection}{SKILLS}
-        \begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
-            Hard Skills & HTML, CSS, JavaScript, TypeScript, React, Tailwind CSS, REST API, Node.js, Express.js, Firebase, MySQL, Git, Linux, Java \\
-            Soft Skills & communicative, purposeful, adaptive, creative\\
-            Languages & English - fluent, Hebrew - fluent, Russian - native, Ukrainian - native
-        \end{tabularx}
+ \begin{rSection}{SKILLS}
+  \begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
+   Hard Skills & HTML, CSS, JavaScript, TypeScript, React, Tailwind CSS, REST API, Node.js, Express.js, Firebase, MySQL, Git, Linux, Java \\
+   Soft Skills & communicative, purposeful, adaptive, creative\\
+   Languages & English - fluent, Hebrew - fluent, Russian - native, Ukrainian - native
+  \end{tabularx}
 
-    \end{rSection}
+ \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-    \begin{rSection}{PROJECTS}
-        \begin{itemize}
-            \item \textbf{\href{https://github.com/Asnvir/React-TS-RickMorty}{Rick and Morty – React,Typescript app }}– in progress {\\Rick and Morty - React is an in-progress project that utilizes React to build an application using the Rick and Morty API. The project incorporates various technologies to enhance the development process and create a seamless user experience.\\
-            \textbf{Technologies Used:}  React,React Router,State Management (Redux),Tailwind CSS,Axios/Fetch
+ \begin{rSection}{PROJECTS}
+  \begin{itemize}
+   \item \textbf{\href{https://github.com/Asnvir/React-TS-RickMorty}{Rick and Morty – React,Typescript app }}– in progress {\\Rick and Morty - React is an in-progress project that utilizes React to build an application using the Rick and Morty API. The project incorporates various technologies to enhance the development process and create a seamless user experience.\\
+   \textbf{Technologies Used:}  React,React Router,State Management (Redux),Tailwind CSS,Axios/Fetch
 
-            \vspace{0.25em} % Add space between items
-            \item \textbf{{\href{https://github.com/Asnvir/todo-react-app}{Full Stack Todo List }}}{\\A full stack Todo List application built using React on the front-end and Node.js with Express on the back-end. The application allows users to create, update, and delete tasks in a simple and intuitive manner.\\
-            \textbf{Technologies Used:} React, custom hooks, React Context Node.js, Express, JavaScript, HTML, CSS, CRUD, Axios/Fetch}
-            }
-        \end{itemize}
-    \end{rSection}
+   \vspace{0.25em} % Add space between items
+   \item \textbf{{\href{https://github.com/Asnvir/todo-react-app}{Full Stack Todo List }}}{\\A full stack Todo List application built using React on the front-end and Node.js with Express on the back-end. The application allows users to create, update, and delete tasks in a simple and intuitive manner.\\
+   \textbf{Technologies Used:} React, custom hooks, React Context Node.js, Express, JavaScript, HTML, CSS, CRUD, Axios/Fetch}
+   }
+  \end{itemize}
+ \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	Awards SECTION
 %----------------------------------------------------------------------------------------
 
-    \begin{rSection}{Awards}
-        \vspace{-1.25em}
-        \item \textbf{Military Recognition as a Volunteer Soldier (Hebrew - Miztayen Aluf)}
-        \\Commended for outstanding dedication and unwavering commitment while serving as
-        both a volunteer and lone soldier in the Israel Defense Forces \textbf{(IDF)}, I received a
-        certificate of merit from Colonel Eyal Zamir, commander of the Southern Command.
-        Despite initially facing a profile that exempted me from service(Hebrew - profil 21), my deep
-        connection to my Jewish identity and love for Israel motivated me to volunteer. This
-        dedication led to earning recognition for excellence and professional action in military
-        service . My journey as a volunteer and lone soldier reflects my unwavering dedication
-        and resilience in fulfilling my commitment to the \textbf{IDF}.
-    \end{rSection}
+ \begin{rSection}{Awards}
+  \vspace{-1.25em}
+  \item \textbf{Military Recognition as a Volunteer Soldier (Hebrew - Miztayen Aluf)}
+  \\Commended for outstanding dedication and unwavering commitment while serving as
+  both a volunteer and lone soldier in the Israel Defense Forces \textbf{(IDF)}, I received a
+  certificate of merit from Colonel Eyal Zamir, commander of the Southern Command.
+  Despite initially facing a profile that exempted me from service(Hebrew - profil 21), my deep
+  connection to my Jewish identity and love for Israel motivated me to volunteer. This
+  dedication led to earning recognition for excellence and professional action in military
+  service . My journey as a volunteer and lone soldier reflects my unwavering dedication
+  and resilience in fulfilling my commitment to the \textbf{IDF}.
+ \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	OBJECTIVE
 %----------------------------------------------------------------------------------------
 
-    \begin{rSection}{Summary}
+ \begin{rSection}{Summary}
 
-        As a third-year software engineering student at \href{https://www.afeka.ac.il/}{Afeka College of Engineering}, I'm enthusiastic about launching my
-        career in frontend development. I bring a solid foundation in HTML, CSS, JavaScript, and React,
-        constantly honing my skills through dedicated self-study.
-        My passion for coding is reflected in my \href{https://github.com/Asnvir}{GitHub profile}, where you can explore my projects and
-        code examples. These demonstrate my proficiency in various technologies and showcase my
-        practical experience in software development.
-        I am excited about joining a team, where I can apply my skills and dedication to make a significant
-        impact in the field of front-end development.
+  As a third-year software engineering student at \href{https://www.afeka.ac.il/}{Afeka College of Engineering}, I'm enthusiastic about launching my
+  career in frontend development. I bring a solid foundation in HTML, CSS, JavaScript, and React,
+  constantly honing my skills through dedicated self-study.
+  My passion for coding is reflected in my \href{https://github.com/Asnvir}{GitHub profile}, where you can explore my projects and
+  code examples. These demonstrate my proficiency in various technologies and showcase my
+  practical experience in software development.
+  I am excited about joining a team, where I can apply my skills and dedication to make a significant
+  impact in the field of front-end development.
 
 
-    \end{rSection}
+ \end{rSection}
 
 
 % %----------------------------------------------------------------------------------------
@@ -108,22 +112,22 @@
 % \textbf{Role Name} \hfill Jan 2017 - Jan 2019\\
 % Company Name \hfill \textit{San Francisco, CA}
 %  \begin{itemize}
-%     \itemsep -3pt {} 
+%     \itemsep -3pt {}
 %      \item Achieved X\% growth for XYZ using A, B, and C skills.
 %      \item Led XYZ which led to X\% of improvement in ABC
-%     \item Developed XYZ that did A, B, and C using X, Y, and Z. 
+%     \item Developed XYZ that did A, B, and C using X, Y, and Z.
 %  \end{itemize}
 
 % \textbf{Role Name} \hfill Jan 2017 - Jan 2019\\
 % Company Name \hfill \textit{San Francisco, CA}
 %  \begin{itemize}
-%     \itemsep -3pt {} 
+%     \itemsep -3pt {}
 %      \item Achieved X\% growth for XYZ using A, B, and C skills.
 %      \item Led XYZ which led to X\% of improvement in ABC
-%     \item Developed XYZ that did A, B, and C using X, Y, and Z. 
+%     \item Developed XYZ that did A, B, and C using X, Y, and Z.
 %  \end{itemize}
 
-% \end{rSection} 
+% \end{rSection}
 
 
 
@@ -132,9 +136,9 @@
 
 
 %----------------------------------------------------------------------------------------
-% \begin{rSection}{Leadership} 
+% \begin{rSection}{Leadership}
 % \begin{itemize}
-%     \item Admin for the \href{https://discord.com/invite/WWbjEaZ}{FAANGPath Discord community} with over 6000+ job seekers and industry mentors. Actively involved in facilitating online events, career conversations, and more alongside other admins and a team of volunteer moderators! 
+%     \item Admin for the \href{https://discord.com/invite/WWbjEaZ}{FAANGPath Discord community} with over 6000+ job seekers and industry mentors. Actively involved in facilitating online events, career conversations, and more alongside other admins and a team of volunteer moderators!
 % \end{itemize}
 
 
